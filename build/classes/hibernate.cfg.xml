@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/anjali</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">adminadmin</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping class="com.anjali.domain.Category"/>
+    <mapping class="com.anjali.domain.CategoryDetails"/>
+    
+    <mapping class="com.anjali.domain.SubCategory"/>
+    <mapping class="com.anjali.domain.SubCategoryDetails"/>
+    <mapping class="com.anjali.domain.UserType"/>
+    <mapping class="com.anjali.domain.Login"/>
+    <mapping class="com.anjali.domain.Person"/>
+    <mapping class="com.anjali.domain.PersonDetails"/>
+    <mapping class="com.anjali.domain.ProfileImage"/>
+    <mapping class="com.anjali.domain.Document"/>
+    <mapping class="com.anjali.domain.Video"/>
+    <mapping class="com.anjali.domain.Comment"/>
+    <mapping class="com.anjali.domain.Content"/>
+    <mapping class="com.anjali.domain.ContentImage"/>
+    <mapping class="com.anjali.domain.Enquiry"/>
+    <mapping class="com.anjali.domain.FriendRequest"/>
+    <mapping class="com.anjali.domain.Message"/>
+    <mapping class="com.anjali.domain.ShareBox"/>
+  </session-factory>
+</hibernate-configuration>
